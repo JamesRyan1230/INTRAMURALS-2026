@@ -41,5 +41,13 @@
       "bronze": 0
     }
   ],
-  "events": []
+  "events": [
+    {
+      "id": "ev1783184157949",
+      "name": "Badminton Boys' Doubles",
+      "gold": "blue",
+      "silver": "orange",
+      "bronze": "white"
+    }
+  ]
 }
