@@ -1,0 +1,9 @@
+{
+  "teams": [
+    { "id": "white",  "name": "White Stallions", "mascot": "🐎 Where The Champions Ride", "flag": "flag-white",  "icon": "🐎", "gold": 0, "silver": 0, "bronze": 0 },
+    { "id": "orange", "name": "Orange Bulldogs",  "mascot": "🐾 Unity, Respect, Excellence, and Integrity", "flag": "flag-orange", "icon": "🐾", "gold": 0, "silver": 0, "bronze": 0 },
+    { "id": "black",  "name": "Black Phoenix",    "mascot": "🔥 Together We Rise", "flag": "flag-black",  "icon": "🔥", "gold": 0, "silver": 0, "bronze": 0 },
+    { "id": "blue",   "name": "Blue Wolves",      "mascot": "🐺 I Win or I Learn", "flag": "flag-blue",   "icon": "🐺", "gold": 0, "silver": 0, "bronze": 0 }
+  ],
+  "events": []
+}

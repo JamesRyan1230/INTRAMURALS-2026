@@ -376,6 +376,7 @@
   <div class="admin-banner" id="adminBanner">
     <div class="admin-banner-inner">
       <span>⚙️ Admin mode — tap the +/− controls to update medal counts</span>
+      <button onclick="downloadDataJson()">⬇ Export data.json</button>
       <button onclick="exitAdmin()">Done Editing</button>
     </div>
   </div>
@@ -444,27 +445,73 @@
   let events = [];
   let isAdmin = false;
 
+  // ===== Data loading =====
+  // The published, shared source of truth is data.json, sitting next to this
+  // HTML file in the repo. Every visitor's browser fetches that same file, so
+  // everyone sees the same standings — unlike localStorage, which is private
+  // to a single browser and can never be seen by anyone else.
+  //
+  // Admin edits are applied live in memory (and cached to localStorage on this
+  // device as a safety net / draft), but they only become visible to OTHER
+  // visitors once you export data.json (Admin > Export data.json) and commit /
+  // upload that file to your GitHub repo, overwriting the old one.
   function loadData(){
-    try{
-      const raw = localStorage.getItem(STORAGE_KEY);
-      const parsed = raw ? JSON.parse(raw) : null;
-      teams = (parsed && parsed.teams) ? parsed.teams : DEFAULT_TEAMS;
-      events = (parsed && parsed.events) ? parsed.events : DEFAULT_EVENTS;
-    }catch(e){
-      teams = DEFAULT_TEAMS;
-      events = DEFAULT_EVENTS;
-    }
-    render();
-    renderEvents();
+    fetch("data.json", { cache: "no-store" })
+      .then(res => {
+        if(!res.ok) throw new Error("data.json not found");
+        return res.json();
+      })
+      .then(parsed => {
+        teams = (parsed && parsed.teams) ? parsed.teams : DEFAULT_TEAMS;
+        events = (parsed && parsed.events) ? parsed.events : DEFAULT_EVENTS;
+        render();
+        renderEvents();
+      })
+      .catch(() => {
+        // Fallback: no data.json reachable (e.g. opened as a local file://
+        // page, where fetch of local files is blocked by the browser).
+        // In that case fall back to whatever was last saved on this device,
+        // then to defaults.
+        try{
+          const raw = localStorage.getItem(STORAGE_KEY);
+          const parsed = raw ? JSON.parse(raw) : null;
+          teams = (parsed && parsed.teams) ? parsed.teams : DEFAULT_TEAMS;
+          events = (parsed && parsed.events) ? parsed.events : DEFAULT_EVENTS;
+        }catch(e){
+          teams = DEFAULT_TEAMS;
+          events = DEFAULT_EVENTS;
+        }
+        render();
+        renderEvents();
+      });
   }
 
   function saveData(){
+    // Keeps this device's browser in sync while the admin is actively
+    // editing, so a refresh mid-session doesn't lose work. This does NOT
+    // publish anything — it only writes to this browser's local storage.
     try{
       localStorage.setItem(STORAGE_KEY, JSON.stringify({ teams, events }));
     }catch(e){
       console.error("Storage error", e);
       showToast("Couldn't save — storage unavailable in this browser");
     }
+  }
+
+  // Downloads the current in-memory teams/events as data.json. Upload/commit
+  // this file to your GitHub repo (replacing the existing data.json) to
+  // actually publish your changes for everyone else to see.
+  function downloadDataJson(){
+    const blob = new Blob([JSON.stringify({ teams, events }, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "data.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+    showToast("Downloaded data.json — upload it to GitHub to publish");
   }
 
   function sortedTeams(){
