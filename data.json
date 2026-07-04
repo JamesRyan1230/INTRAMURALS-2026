@@ -6,9 +6,9 @@
       "mascot": "🐎 Where The Champions Ride",
       "flag": "flag-white",
       "icon": "🐎",
-      "gold": 2,
-      "silver": 4,
-      "bronze": 6
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
     },
     {
       "id": "orange",
@@ -16,9 +16,9 @@
       "mascot": "🐾 Unity, Respect, Excellence, and Integrity",
       "flag": "flag-orange",
       "icon": "🐾",
-      "gold": 9,
-      "silver": 5,
-      "bronze": 5
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
     },
     {
       "id": "black",
@@ -26,9 +26,9 @@
       "mascot": "🔥 Together We Rise",
       "flag": "flag-black",
       "icon": "🔥",
-      "gold": 4,
-      "silver": 5,
-      "bronze": 5
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
     },
     {
       "id": "blue",
@@ -36,165 +36,10 @@
       "mascot": "🐺 I Win or I Learn",
       "flag": "flag-blue",
       "icon": "🐺",
-      "gold": 7,
-      "silver": 8,
-      "bronze": 4
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
     }
   ],
-  "events": [
-    {
-      "id": "ev1783180660798",
-      "name": "Badminton Boys' Doubles",
-      "gold": "blue",
-      "silver": "orange",
-      "bronze": "white"
-    },
-    {
-      "id": "ev1783180734412",
-      "name": "Badminton Boys' Singles A",
-      "gold": "blue",
-      "silver": "orange",
-      "bronze": "white"
-    },
-    {
-      "id": "ev1783180826374",
-      "name": "Badminton Boys Singles B",
-      "gold": "orange",
-      "silver": "white",
-      "bronze": "blue"
-    },
-    {
-      "id": "ev1783180890328",
-      "name": "Badminton Girls' Doubles",
-      "gold": "orange",
-      "silver": "blue",
-      "bronze": "black"
-    },
-    {
-      "id": "ev1783180958471",
-      "name": "Badminton Girls' Singles A",
-      "gold": "orange",
-      "silver": "blue",
-      "bronze": "black"
-    },
-    {
-      "id": "ev1783181014566",
-      "name": "Badminton Girls' Singles B",
-      "gold": "orange",
-      "silver": "blue",
-      "bronze": "black"
-    },
-    {
-      "id": "ev1783181073505",
-      "name": "Chess Board 1 - Boys",
-      "gold": "orange",
-      "silver": "black",
-      "bronze": "blue"
-    },
-    {
-      "id": "ev1783181159568",
-      "name": "Chess Board 2 - Boys",
-      "gold": "blue",
-      "silver": "black",
-      "bronze": "white"
-    },
-    {
-      "id": "ev1783181279201",
-      "name": "Chess Board 1 - Girls",
-      "gold": "orange",
-      "silver": "white",
-      "bronze": null
-    },
-    {
-      "id": "ev1783181333142",
-      "name": "Chess Board 2 - Girls",
-      "gold": "white",
-      "silver": "orange",
-      "bronze": "black"
-    },
-    {
-      "id": "ev1783181387266",
-      "name": "Sepak Takraw Boys",
-      "gold": "blue",
-      "silver": "orange",
-      "bronze": null
-    },
-    {
-      "id": "ev1783181518397",
-      "name": "Sepak Takraw Girls",
-      "gold": "blue",
-      "silver": "orange",
-      "bronze": "white"
-    },
-    {
-      "id": "ev1783181705455",
-      "name": "Table Tennis (Boys-Doubles)",
-      "gold": "black",
-      "silver": "blue",
-      "bronze": "orange"
-    },
-    {
-      "id": "ev1783181885607",
-      "name": "Table Tennis (Girls-Doubles)",
-      "gold": "blue",
-      "silver": "white",
-      "bronze": "black"
-    },
-    {
-      "id": "ev1783181969752",
-      "name": "Table Tennis (Boys-Single A)",
-      "gold": "blue",
-      "silver": "black",
-      "bronze": "orange"
-    },
-    {
-      "id": "ev1783182042545",
-      "name": "Table Tennis (Boys-Single B)",
-      "gold": "black",
-      "silver": "blue",
-      "bronze": "orange"
-    },
-    {
-      "id": "ev1783182095256",
-      "name": "Table Tennis (Girls-Single A)",
-      "gold": "white",
-      "silver": "black",
-      "bronze": "orange"
-    },
-    {
-      "id": "ev1783182159462",
-      "name": "Table Tennis (Girls-Single B) Event",
-      "gold": "black",
-      "silver": "blue",
-      "bronze": "orange"
-    },
-    {
-      "id": "ev1783182235632",
-      "name": "Volleyball - Boys",
-      "gold": "black",
-      "silver": "white",
-      "bronze": "blue"
-    },
-    {
-      "id": "ev1783182592626",
-      "name": "Volleyball - Girls",
-      "gold": "orange",
-      "silver": "blue",
-      "bronze": "white"
-    },
-    {
-      "id": "ev1783182663721",
-      "name": "Word Factory - Boys",
-      "gold": "orange",
-      "silver": "black",
-      "bronze": "blue"
-    },
-    {
-      "id": "ev1783182722588",
-      "name": "Word Factory - Girls",
-      "gold": "orange",
-      "silver": "blue",
-      "bronze": "white"
-    }
-  ]
+  "events": []
 }
