@@ -6,9 +6,9 @@
       "mascot": "🐎 Where The Champions Ride",
       "flag": "flag-white",
       "icon": "🐎",
-      "gold": 2,
-      "silver": 4,
-      "bronze": 6
+      "gold": 4,
+      "silver": 11,
+      "bronze": 11
     },
     {
       "id": "orange",
@@ -16,9 +16,9 @@
       "mascot": "🐾 Unity, Respect, Excellence, and Integrity",
       "flag": "flag-orange",
       "icon": "🐾",
-      "gold": 9,
-      "silver": 5,
-      "bronze": 5
+      "gold": 16,
+      "silver": 8,
+      "bronze": 9
     },
     {
       "id": "black",
@@ -26,9 +26,9 @@
       "mascot": "🔥 Together We Rise",
       "flag": "flag-black",
       "icon": "🔥",
-      "gold": 4,
-      "silver": 5,
-      "bronze": 5
+      "gold": 9,
+      "silver": 11,
+      "bronze": 7
     },
     {
       "id": "blue",
@@ -36,9 +36,9 @@
       "mascot": "🐺 I Win or I Learn",
       "flag": "flag-blue",
       "icon": "🐺",
-      "gold": 7,
-      "silver": 8,
-      "bronze": 4
+      "gold": 17,
+      "silver": 15,
+      "bronze": 12
     }
   ],
   "events": [
@@ -195,6 +195,174 @@
       "gold": "orange",
       "silver": "blue",
       "bronze": "white"
+    },
+    {
+      "id": "ev1783222960089",
+      "name": "100m - Boys",
+      "gold": "black",
+      "silver": "blue",
+      "bronze": "white"
+    },
+    {
+      "id": "ev1783223018755",
+      "name": "100m - Girls",
+      "gold": "black",
+      "silver": null,
+      "bronze": "white"
+    },
+    {
+      "id": "ev1783223102591",
+      "name": "200m - Boys",
+      "gold": "blue",
+      "silver": null,
+      "bronze": "orange"
+    },
+    {
+      "id": "ev1783223182799",
+      "name": "200m - Girls",
+      "gold": "white",
+      "silver": "black",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223227176",
+      "name": "400m - Boys",
+      "gold": "blue",
+      "silver": "white",
+      "bronze": "black"
+    },
+    {
+      "id": "ev1783223290739",
+      "name": "400m - Girls",
+      "gold": "orange",
+      "silver": "black",
+      "bronze": "blue"
+    },
+    {
+      "id": "ev1783223319348",
+      "name": "800m - Boys",
+      "gold": "blue",
+      "silver": "black",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223368081",
+      "name": "800m - Girls",
+      "gold": "blue",
+      "silver": "orange",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223457216",
+      "name": "1500m - Boys",
+      "gold": "blue",
+      "silver": null,
+      "bronze": "white"
+    },
+    {
+      "id": "ev1783223483568",
+      "name": "1500m - Girls",
+      "gold": "black",
+      "silver": "blue",
+      "bronze": "orange"
+    },
+    {
+      "id": "ev1783223514128",
+      "name": "3000m - Boys",
+      "gold": "blue",
+      "silver": "black",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223541596",
+      "name": "3000m - Girls",
+      "gold": "orange",
+      "silver": "white",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223634086",
+      "name": "Long Jump - Boys",
+      "gold": "black",
+      "silver": "blue",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223671743",
+      "name": "Long Jump - Girls",
+      "gold": "orange",
+      "silver": "black",
+      "bronze": "blue"
+    },
+    {
+      "id": "ev1783223700409",
+      "name": "High Jump - Boys",
+      "gold": "black",
+      "silver": "blue",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223724575",
+      "name": "High Jump - Girls",
+      "gold": "orange",
+      "silver": null,
+      "bronze": null
+    },
+    {
+      "id": "ev1783223744531",
+      "name": "Triple Jump - Boys",
+      "gold": "black",
+      "silver": "blue",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223794317",
+      "name": "Triple Jump - Girls",
+      "gold": "orange",
+      "silver": "blue",
+      "bronze": null
+    },
+    {
+      "id": "ev1783223816792",
+      "name": "Walkathon - Boys",
+      "gold": "white",
+      "silver": null,
+      "bronze": "blue"
+    },
+    {
+      "id": "ev1783223846453",
+      "name": "Walkathon - Girls",
+      "gold": "blue",
+      "silver": "black",
+      "bronze": "white"
+    },
+    {
+      "id": "ev1783224147204",
+      "name": "Dancesport Cha-cha-cha",
+      "gold": "blue",
+      "silver": "white",
+      "bronze": "orange"
+    },
+    {
+      "id": "ev1783224296978",
+      "name": "Dancesport Samba",
+      "gold": "blue",
+      "silver": "white",
+      "bronze": "orange"
+    },
+    {
+      "id": "ev1783224339475",
+      "name": "Dancesport Jive",
+      "gold": "blue",
+      "silver": "white",
+      "bronze": "orange"
+    },
+    {
+      "id": "ev1783224372698",
+      "name": "Dancesport Waltz",
+      "gold": "orange",
+      "silver": "white",
+      "bronze": "blue"
     }
   ]
 }
