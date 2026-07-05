@@ -357,6 +357,23 @@
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
   }
+
+  /* ===== EVENT RESULTS TABLE ===== */
+.section-head-collapsible{cursor:pointer; user-select:none;}
+.collapse-caret{
+  display:inline-block; font-size:14px; margin-left:6px;
+  transition:transform 0.25s ease;
+}
+.section-head-collapsible.collapsed .collapse-caret{transform:rotate(-90deg);}
+.events-wrap{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  overflow:hidden; box-shadow:0 1px 2px rgba(19,35,71,0.04);
+  max-height:4000px; opacity:1;
+  transition:max-height 0.35s ease, opacity 0.25s ease, margin 0.25s ease;
+}
+.events-wrap.collapsed{
+  max-height:0; opacity:0; border-width:0; margin:0; pointer-events:none;
+}
 </style>
 </head>
 <body>
@@ -388,11 +405,11 @@
     </div>
     <div class="leaderboard" id="leaderboard"></div>
 
-    <div class="section-head">
-      <h2>Event Results</h2>
+    <div class="section-head section-head-collapsible collapsed" id="eventsSectionHead" onclick="toggleEventsSection()">
+      <h2>Event Results <span class="collapse-caret" id="eventsCaret">▾</span></h2>
       <p id="eventsHint">Medalists per event</p>
     </div>
-    <div class="events-wrap">
+    <div class="events-wrap collapsed" id="eventsWrap">
       <div class="events-scroll">
         <table class="events-table">
           <thead>
@@ -747,6 +764,11 @@
     t.classList.add("show");
     setTimeout(()=>t.classList.remove("show"), 1800);
   }
+
+  function toggleEventsSection(){
+  document.getElementById("eventsWrap").classList.toggle("collapsed");
+  document.getElementById("eventsSectionHead").classList.toggle("collapsed");
+}
 
   loadData();
 </script>
