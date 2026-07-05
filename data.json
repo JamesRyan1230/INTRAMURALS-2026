@@ -6,9 +6,9 @@
       "mascot": "🐎 Where The Champions Ride",
       "flag": "flag-white",
       "icon": "🐎",
-      "gold": 4,
-      "silver": 11,
-      "bronze": 11
+      "gold": 5,
+      "silver": 12,
+      "bronze": 12
     },
     {
       "id": "orange",
@@ -16,8 +16,8 @@
       "mascot": "🐾 Unity, Respect, Excellence, and Integrity",
       "flag": "flag-orange",
       "icon": "🐾",
-      "gold": 16,
-      "silver": 8,
+      "gold": 18,
+      "silver": 9,
       "bronze": 9
     },
     {
@@ -27,8 +27,8 @@
       "flag": "flag-black",
       "icon": "🔥",
       "gold": 9,
-      "silver": 11,
-      "bronze": 7
+      "silver": 12,
+      "bronze": 9
     },
     {
       "id": "blue",
@@ -36,9 +36,9 @@
       "mascot": "🐺 I Win or I Learn",
       "flag": "flag-blue",
       "icon": "🐺",
-      "gold": 17,
-      "silver": 15,
-      "bronze": 12
+      "gold": 18,
+      "silver": 16,
+      "bronze": 13
     }
   ],
   "events": [
@@ -363,6 +363,34 @@
       "gold": "orange",
       "silver": "white",
       "bronze": "blue"
+    },
+    {
+      "id": "ev1783232882305",
+      "name": "Basketball - Boys",
+      "gold": "white",
+      "silver": "orange",
+      "bronze": "blue"
+    },
+    {
+      "id": "ev1783232940112",
+      "name": "Basketball - Boys",
+      "gold": "blue",
+      "silver": "black",
+      "bronze": "white"
+    },
+    {
+      "id": "ev1783232959343",
+      "name": "Football",
+      "gold": "orange",
+      "silver": "white",
+      "bronze": "black"
+    },
+    {
+      "id": "ev1783232995697",
+      "name": "Mobile Legends",
+      "gold": "orange",
+      "silver": "blue",
+      "bronze": "black"
     }
   ]
 }
